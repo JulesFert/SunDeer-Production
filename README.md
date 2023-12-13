@@ -20,4 +20,4 @@ Pour toute demande de collaboration, de devis ou simplement pour discuter de vot
 
 ---
 
-**Sun Deer Studio - Transformez vos idées en son.**
+**Sun Deer Studio - La passion de la musique à votre service.**
