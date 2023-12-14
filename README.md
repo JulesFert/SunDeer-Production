@@ -1,3 +1,5 @@
+![Image SunDeer](./assets\background_intro.jpg).
+
 # Sun Deer Studio
 
 Bienvenue sur le site vitrine de Sun Deer, artiste passionnée par le mixage audio, la composition et la musique à l'image.
