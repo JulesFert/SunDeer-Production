@@ -1,4 +1,4 @@
-![Image SunDeer](C:\xampp\htdocs\projet sun deer\assets\background_intro.jpg).
+![Image SunDeer](assets\background_intro.jpg).
 
 # Sun Deer Studio
 
