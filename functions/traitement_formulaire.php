@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = $_POST["telephone"];
     $message = $_POST["message"];
 
-    // Mettez en forme le courriel
+    // Mise en forme du mail
     $sujet = "Nouveau message de $nom_prenom";
     $corps_message = "Nom et Prénom: $nom_prenom\n";
     $corps_message .= "Email: $email\n";
@@ -19,9 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $corps_message .= "Message:\n$message";
 
     // Adresse email de réception
-    $destinataire = "jfert.lyon@gmail.com"; // Remplacez par votre adresse Gmail
+    $destinataire = "sundeer.art@gmail.com"; 
 
-    // Utilisation de PHPMailer pour envoyer le courriel
+    // Utilisation de PHPMailer pour envoyer le mail
     $mail = new PHPMailer(true);
 
     try {
@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'jfert.lyon@gmail.com'; // Remplacez par votre adresse Gmail
-        $mail->Password = 'nuyt gyge ltxk rmyl'; // Remplacez par votre mot de passe Gmail
+        $mail->Username = 'sundeer.art@gmail.com'; 
+        $mail->Password = 'orlh hnex dwqb rmnl'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
 
-        // Redirection après l'envoi du courriel
+        // Redirection après l'envoi du mail
         header("Location: ../views/index.html#contact");
         exit();
     } catch (Exception $e) {
