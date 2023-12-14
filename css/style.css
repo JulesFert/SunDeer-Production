@@ -66,7 +66,7 @@ body {
     border-radius: 18px;
 }
 
-.article0, .article, .article2, .article3, .article4, .article_studio {
+.article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
     height: calc(100vh + 10rem);
 }
 
@@ -150,6 +150,14 @@ body {
     position: relative;
 }
 
+.article5 {
+    background-image: url(../assets/Leonardo_Diffusion_XL_a_deer_with_headphones_in_front_of_a_mix_2\ \(1\).jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative; 
+}
+
 .contact {
     margin-top: -5rem;
 }
@@ -209,8 +217,26 @@ button:hover {
 audio {
     display: block;
     width: 25rem;
-    height: 5rem;
+    height: 4rem;
     margin: 0.5rem 0;
+}
+
+.audio__title {
+    color: #FFCA0A;
+    margin-bottom: -0.5rem;
+    text-align: center;
+}
+
+.audio__content {
+    margin-top: 2rem;
+}
+
+.audio1, .audio2 {
+    margin: 1rem 0;
+}
+
+.audio2, .audio3 {
+    margin: 3rem 0;
 }
 
 ul {
@@ -239,18 +265,67 @@ ul.article__text {
 .social-media {
     display: flex;
     margin-top: 16rem;
-    gap: 4.5rem;
+    gap: 3.5rem;
     position: absolute;
     bottom: 10%;
 }
 
-#linkedin-link {
+.social-media #youtube {
+    height: 4rem;
+}
+
+.social-media-strong {
+    color: #FFCA0A;
+}
+
+#linkedin-link a {
     color: antiquewhite;
     text-decoration: none;
 }
 
 .article__text li {
     margin: 1rem 0;
+}
+
+.full {
+    width: 100%;
+    background-color: #000000b8;
+}
+
+.wayden-ul {
+    width: 80%;
+}
+
+.wayden-li {
+    display: flex;
+    gap: 5rem;
+}
+
+.wayden {
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#wayden {
+    height: 12rem;
+    border-radius: 12px;
+}
+
+.wayden-card, .lessources-card {
+    border: 2px solid rgba(250, 235, 215, 0.529);
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.2s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.05);
 }
 
 /* 
