@@ -1,4 +1,4 @@
-![Image SunDeer](assets\background_intro.jpg).
+![Image SunDeer](assets\background_intro.jpg)
 
 # Sun Deer Studio
 
