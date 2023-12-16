@@ -253,7 +253,7 @@ audio {
     margin: 1rem 0;
 }
 
-.audio2, .audio3 {
+.audio3, .audio4 {
     margin: 3rem 0;
 }
 
@@ -736,17 +736,27 @@ z-index: -1
     }
 
     .header__title{
-        width: 12rem;
-        font-size: 1.5rem;
+        width: 20rem;
+        font-size: 2rem;
     }
 
     .header__subtitle {
+        width: 20rem;
+        font-size: 1.2rem;
+        margin: 2rem 3rem 0 3rem;
+        width: auto;
+        bottom: 80px;
+        right: 0;
+    }
+
+    .logo__img {
+        margin: -2rem auto 0 auto;
         width: 15rem;
     }
 
     .navbar a {
         padding: 14px 8px;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
 
     .article {
@@ -755,6 +765,37 @@ z-index: -1
 
     .article__title {
         font-size: 2.5rem;
+    }
+
+    .article__content {
+        width: 100%; 
+      }
+
+    .right {
+        margin-left: 0;
+        position: inherit;
+    }  
+
+    .logo__img, .img-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
+        height: calc(100vh + 32rem);
+    }
+
+    .audio1, .audio2 {
+        max-width: 60%;
+    }
+
+    audio {
+        width: 15rem;
+    }
+
+    .article__text {
+        padding: 0 1.2rem;
+        text-align: center
     }
 
   }
