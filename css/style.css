@@ -790,10 +790,6 @@ z-index: -1
         height: calc(100vh + 32rem);
     }
 
-    .audio1, .audio2 {
-        max-width: 60%;
-    }
-
     audio {
         width: 15rem;
     }
@@ -814,6 +810,7 @@ z-index: -1
         justify-content: center;
         position: fixed;
         top: 0;
+        margin-top: 1rem;
         margin-left: 75%;
         width: 3rem;
         height: 2rem;
@@ -872,6 +869,15 @@ z-index: -1
         height: 8rem;
     }
 
+
+  }
+
+  @media screen and (max-width: 400px) { 
+
+    .header__title {
+        width: 18rem;
+        font-size: 1.3rem;
+    }
 
   }
 
