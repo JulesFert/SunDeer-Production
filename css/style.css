@@ -319,13 +319,13 @@ ul.article__text {
     gap: 5rem;
 }
 
-.wayden {
+.wayden, .sources {
     color: antiquewhite;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
-#wayden {
+#wayden, #sources {
     height: 12rem;
     border-radius: 12px;
 }
@@ -348,6 +348,11 @@ ul.article__text {
 
 /* 
 NAVBAR DYNAMIQUE  */
+
+.navbar-burger {
+    display: none;
+    height: 15px;
+}
 
 .navbar {
     z-index: 1000;
@@ -798,4 +803,79 @@ z-index: -1
         text-align: center
     }
 
+    .navbar {
+        display: none;
+    }
+
+    .navbar-burger {
+        z-index: 1000;
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        margin-left: 75%;
+        width: 3rem;
+        height: 2rem;
+        border-radius: 15px;
+    }
+
+    #burger {
+        height: 16px;
+        padding-top: 19%;
+    }
+
+    .navbar-burger span {
+        color: antiquewhite;
+    }
+
+    .article__text.contact {
+        position: inherit;
+        margin-top: 1rem;
+        width: 18rem;
+        overflow: auto;
+    }
+
+    .form {
+        bottom: 26rem;
+        right: calc(50%-160px);
+        width: 70%;
+    }
+
+    button {
+        right: 67px;
+    }
+
+    .social-media {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+
+    }
+
+    #sources {
+        height: 7rem;
+    }
+
+    #wayden {
+        height: 10rem;
+    }
+
+    .wayden-li {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lessources-card img {
+        height: 8rem;
+    }
+
+
   }
+
+/* classe pour afficher la navbar en vue mobile */
+.show-burger {
+    display: inherit;
+}
