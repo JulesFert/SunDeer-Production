@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $corps_message .= "Message:\n$message";
 
     // Adresse email de réception
-    $destinataire = "jfert.lyon@gmail.com"; 
+    $destinataire = "sundeer.art@gmail.com"; 
 
     // Utilisation de PHPMailer pour envoyer le mail
     $mail = new PHPMailer(true);
@@ -29,9 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'jfert.lyon@gmail.com'; 
-        $mail->Password = 'vsiu gkwd dclj ihmb'; 
-        // $mail->Password = 'orlh hnex dwqb rmnl'; 
+        $mail->Username = 'sundeer.art@gmail.com'; 
+        $mail->Password = 'orlh hnex dwqb rmnl'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
