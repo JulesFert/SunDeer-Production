@@ -22,8 +22,31 @@
         <a class="navbar-link" href="#contact">Contact</a>
     </div>
 
-      <div class="navbar-burger" id="navbar-burger">
+    <nav>
+        <ul class="main">
+          <li><a class="burger-link" href="#header">Accueil</a></li>
+          <li><a class="burger-link" href="#compositrice">Composition et production</a></li>
+          <li><a class="burger-link" href="#image">Musique à l'image </a></li>
+          <li><a class="burger-link" href="#mixing">Mixage</a></li>
+          <li><a class="burger-link" href="#studio">Le studio</a></li>
+          <li><a class="burger-link" href="#me">Qui suis-je ?</a></li>
+          <li><a class="burger-link" href="#contact">Contact</a></li>
+        </ul>
+    </nav> 
+    
+    <div class="popup" id="successPopup">
+        <div class="popup-content">
+          <span class="close" onclick="closePopup()">&times;</span>
+          <p>Le message a été envoyé avec succès!</p>
+        </div>
+      </div>
+
+      <!-- <div class="navbar-burger" id="navbar-burger">
          <span id="burger">X</span>
+      </div> -->
+
+      <div class="burger">
+        <span></span>
       </div>
 
     <main class="hero">
@@ -169,7 +192,7 @@
 
         <article class="article4" id="contact">
             <div class="form">
-                <form action="../functions/traitement_formulaire.php" method="post">
+                <form id="myForm" action="../functions/traitement_formulaire.php" method="post">
                     <label for="nom_prenom">Nom/Prénom:</label>
                     <input type="text" id="nom_prenom" name="nom_prenom" required>
             
@@ -265,13 +288,13 @@
     </main>
     
     <footer>
-        <nav class="footer__nav">
+        <div class="footer__nav">
             <ul class="footer__ul">
                 <li class="footer__li">SunDeer Production</li>
                 <li class="footer__li">Copyright SunDeer</li>
                 <li class="footer__li">Mentions légales</li>
             </ul>
-        </nav>
+        </div>
     </footer>
     <script src="../app.js"></script>
 </body>
