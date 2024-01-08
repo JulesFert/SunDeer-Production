@@ -33,11 +33,15 @@ init: function() {
         app.burger2.addEventListener('click', app.toggleMenu);
 
         // Ajout d'un écouteur d'évènement sur le bouton du formulaire
-        document.querySelector('form').addEventListener('submit', app.handleSubmit);
+        if (document.querySelector('form')) {
+            document.querySelector('form').addEventListener('submit', app.handleSubmit);
+        }
 
         // pour le pop up à l'envoit du formulaire
-        const form = document.getElementById('myForm');
-        form.addEventListener('submit', app.handleSubmit);
+        if(document.getElementById('myForm')) {
+            const form = document.getElementById('myForm');
+            form.addEventListener('submit', app.handleSubmit);
+        }
     },
 
 navbar : function() {

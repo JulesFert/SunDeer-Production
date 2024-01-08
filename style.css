@@ -377,6 +377,53 @@ ul.article__text {
     transform: scale(1.05);
 }
 
+.legal-notices {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.legal-notices-page {
+    background-image: url(../assets/background.jpg);
+    background-attachment: fixed;
+}
+
+.legal-notices:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.legal-notices-list {
+    list-style-type: none;
+    text-decoration: none;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.legal-notices-list li {
+    margin: 0.5rem 0;
+}
+
+.legal {
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+.util {
+    height: 14rem;
+}
+
+.long {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.notice {
+    height: 150rem;
+}
+
+
 /* 
 NAVBAR DYNAMIQUE  */
 
@@ -1227,6 +1274,18 @@ z-index: -1
 
     .lessources-card img {
         height: 8rem;
+    }
+
+    .legal1 {
+        margin-bottom: 3rem;
+    }
+
+    .legal6 {
+        margin-top: 2rem;
+    }
+
+    .legal-notices-page {
+        height: 190rem;
     }
 
 
