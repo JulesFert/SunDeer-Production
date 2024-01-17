@@ -1168,7 +1168,7 @@ z-index: -1
         font-size: 0.5rem;
     }
 
-    .compo-1 {
+    /* .compo-1 {
       padding-right: 10rem;
       display: block;
       width: 28rem;
@@ -1182,7 +1182,7 @@ z-index: -1
       width: 28rem;
       text-align: right;
       margin-right: 5rem;
-    }
+    } */
 
     .article0, .article, .article2, .article3, .article4, .article_studio {
         background-size: cover;
