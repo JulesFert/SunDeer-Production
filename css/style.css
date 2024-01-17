@@ -1134,7 +1134,7 @@ z-index: -1
   @media screen and (max-width: 700px) {
 
     .header {
-        background: url(../assets/background_redim.png);
+        background: url(../assets/background_intro.jpg) cover;
         height: 100vh
     }
 
