@@ -1168,8 +1168,9 @@ z-index: -1
         font-size: 0.5rem;
     }
 
-    .article {
+    .article, .article2, .article3, .article4, .article_studio {
         background-size: cover;
+        background-position-x: center;
     }
 
     .article__title {
