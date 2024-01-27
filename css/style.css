@@ -1307,13 +1307,6 @@ z-index: -1
         height: 190rem;
     }
 
-    @media screen and (max-height: 800px) {
-      .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
-        height: 60rem;
-    }
-    }
-
-
   }
 
   @media screen and (max-width: 400px) { 
@@ -1324,6 +1317,16 @@ z-index: -1
     }
 
   }
+
+  @media screen and (min-width: 700px) {
+    @media screen and (max-height: 800px) {
+      .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
+        height: 60rem;
+    }
+    }
+  }
+
+  
 
 /* classe pour afficher la navbar en vue mobile */
 .show-burger {
