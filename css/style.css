@@ -1307,6 +1307,12 @@ z-index: -1
         height: 190rem;
     }
 
+    @media screen and (max-height: 800px) {
+      .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
+        height: 60rem;
+    }
+    }
+
 
   }
 
@@ -1317,12 +1323,6 @@ z-index: -1
         font-size: 1.3rem;
     }
 
-  }
-
-  @media screen and (max-height: 800px) {
-    .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
-      height: 60rem;
-  }
   }
 
 /* classe pour afficher la navbar en vue mobile */
