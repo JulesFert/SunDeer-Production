@@ -1321,7 +1321,7 @@ z-index: -1
   @media screen and (min-width: 700px) {
     @media screen and (max-height: 800px) {
       .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
-        height: 60rem;
+        height: 65rem;
     }
     }
   }
