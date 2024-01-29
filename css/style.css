@@ -57,15 +57,16 @@ body {
 }
 
 .logo {
-    display: flex;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Ajoutez une hauteur pour centrer verticalement sur la vue mobile */
+  position: relative; /* Ajoutez une position relative pour que la position absolue de l'image fonctionne correctement */
 }
 
 .logo__img {
-    width: 11rem;
-    position: absolute;
-    border-radius: 18px;
-    top: 1rem;
-    right: 1rem;
+  width: 11rem;
+  border-radius: 18px;
 }
 
 .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
@@ -1155,13 +1156,15 @@ z-index: -1
         right: 0;
     }
 
-    .logo__img {
+    .logo {
+      height: auto; /* Annulez la hauteur de 100vh pour la vue mobile */
+  }
+
+  .logo__img {
       width: 10rem;
-      /* position: static; */
-      margin: 26.5rem 25% 0 30%;
-      top: auto;
-      right: auto;
-    }
+      position: static; /* Annulez la position absolue pour la vue mobile */
+      margin: 0; /* Réinitialisez les marges pour la vue mobile */
+  }
 
     .navbar a {
         padding: 14px 8px;
