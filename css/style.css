@@ -1326,6 +1326,20 @@ z-index: -1
     }
   }
 
+  @media screen and (max-width: 350px) {
+
+    @media screen and (max-height: 675px) {
+        .article0 {
+          height: 75rem;
+        }
+
+        .article {
+          height: 60rem;
+        }
+    }
+
+  }
+
   
 
 /* classe pour afficher la navbar en vue mobile */
