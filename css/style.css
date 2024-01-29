@@ -1157,10 +1157,8 @@ z-index: -1
 
     .logo__img {
       width: 10rem;
-      /* position: static; */
-      margin: 26.5rem 25% 0 30%;
-      top: auto;
-      right: auto;
+      top: 55%;
+      right: calc(50% - 80px);
     }
 
     .navbar a {
