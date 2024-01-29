@@ -1344,7 +1344,7 @@ z-index: -1
     }
   }
 
-  @media screen and (max-height: 800px) {
+  @media screen and (max-height: 800px) and (max-width: 400px) {
     .article3 {
       height: calc(100vh + 50rem);
     }
