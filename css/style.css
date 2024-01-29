@@ -58,10 +58,10 @@ body {
 
 .logo {
   display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  height: 100vh; /* Ajoutez une hauteur pour centrer verticalement sur la vue mobile */
-  position: relative; /* Ajoutez une position relative pour que la position absolue de l'image fonctionne correctement */
+  justify-content: flex-end; /* Aligne à droite par défaut */
+  align-items: center;
+  height: 100vh; /* Hauteur pour centrer verticalement sur la vue mobile */
+  position: relative;
 }
 
 .logo__img {
@@ -1157,13 +1157,14 @@ z-index: -1
     }
 
     .logo {
-      height: auto; /* Annulez la hauteur de 100vh pour la vue mobile */
+      justify-content: center; /* Centre horizontalement en vue mobile */
+      height: auto; /* Annule la hauteur pour la vue mobile */
   }
 
   .logo__img {
       width: 10rem;
-      position: static; /* Annulez la position absolue pour la vue mobile */
-      margin: 0; /* Réinitialisez les marges pour la vue mobile */
+      position: static; /* Annule la position absolue pour la vue mobile */
+      margin: 0; /* Réinitialise les marges pour la vue mobile */
   }
 
     .navbar a {
