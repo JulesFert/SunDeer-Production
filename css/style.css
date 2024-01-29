@@ -1131,7 +1131,7 @@ z-index: -1
 
 /* RESPONSIVE  */
 
-@media screen and (min-height: 800px) {
+@media screen and (max-height: 800px) {
     .header__subtitle {
       bottom: 20px;
     }
