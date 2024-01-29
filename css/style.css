@@ -1344,13 +1344,13 @@ z-index: -1
     }
   }
 
-  @media screen and (max-height: 720px) {
+  @media screen and (max-height: 800px) {
     .article3 {
-      height: calc(100vh + 38rem);
+      height: calc(100vh + 50rem);
     }
 }
 
-@media screen and (max-height: 615px) {
+@media screen and (max-height: 720px) {
     .article3 .article__text {
         font-size: 1.1rem;
     }
