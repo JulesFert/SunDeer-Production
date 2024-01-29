@@ -1324,13 +1324,19 @@ z-index: -1
     }
   }
 
-  @media screen and (max-height: 675px), screen and (max-width: 350px) {
+  @media screen and (max-height: 675px) {
     .article0 {
       height: 75rem;
     }
   
     .article {
       height: 60rem;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .article0 {
+      height: 85rem;
     }
   }
 
