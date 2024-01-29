@@ -1320,6 +1320,10 @@ z-index: -1
     .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
       height: 65rem;
     }
+
+    .header__subtitle {
+      bottom: 20px;
+    }
   }
 
   @media screen and (max-height: 675px) {
