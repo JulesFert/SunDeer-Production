@@ -1155,22 +1155,13 @@ z-index: -1
         right: 0;
     }
 
-    .logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Hauteur pour centrer verticalement sur la vue mobile */
-      position: relative;
-  }
-  
-  .logo__img {
+    .logo__img {
       width: 10rem;
-      border-radius: 18px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
+      /* position: static; */
+      margin: 26.5rem 25% 0 30%;
+      top: auto;
+      right: auto;
+    }
 
     .navbar a {
         padding: 14px 8px;
