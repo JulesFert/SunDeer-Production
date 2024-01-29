@@ -1350,7 +1350,7 @@ z-index: -1
     }
 }
 
-@media screen and (max-height: 720px) {
+@media screen and (max-height: 615px) {
     .article3 .article__text {
         font-size: 1.1rem;
     }
