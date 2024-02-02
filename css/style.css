@@ -1320,7 +1320,7 @@ z-index: -1
         font-size: 1.3rem;
     }
 
-    .article__text.contact li:nth-child(2) {
+    .article__text.contact li:nth-child(1+2) {
       display: none;
     }
 
