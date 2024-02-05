@@ -1130,13 +1130,14 @@ z-index: -1
 
 /* RESPONSIVE  */
 
+
 @media screen and (max-height: 800px) {
     .header__subtitle {
       bottom: 20px;
     }
 }
 
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
     .header {
       background: url(../assets/background_intro.jpg) fixed;
@@ -1369,8 +1370,40 @@ z-index: -1
     }
 }
 
+/* Pour chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 700px) {
+    
+    .form {
+      width: 100%;
+      position: inherit;
 
-  
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .form form input, textarea, label {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  button {
+    position: inherit;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .social-media {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: -6rem auto;
+      justify-content: center;
+
+  }
+  }
+}  
 
 /* classe pour afficher la navbar en vue mobile */
 .show-burger {
