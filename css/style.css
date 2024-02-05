@@ -1325,6 +1325,11 @@ z-index: -1
     }
 
   }
+  /* @media screen and (max-width: 300px){
+    .article0 {
+        height: 100%;
+    } 
+  } */
 
   @media screen and (min-width: 700px) and (max-height: 800px) {
     .article0, .article, .article2, .article3, .article4, .article_studio, .article5 {
@@ -1344,13 +1349,13 @@ z-index: -1
 
   @media screen and (max-width: 350px) {
     .article0 {
-      height: 85rem;
+      height: 100%;
     }
   }
 
   @media screen and (max-height: 800px) and (max-width: 400px) {
     .article3 {
-      height: calc(100vh + 50rem);
+      height: 100%;
     }
 }
 
