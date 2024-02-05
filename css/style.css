@@ -183,7 +183,6 @@ body {
 }
 
 .form{
-    margin-top: 24rem;
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
@@ -1264,20 +1263,30 @@ z-index: -1
     }
 
     .form {
-        bottom: 22rem;
-        right: calc(50%-160px);
-        width: 70%;
+        width: 100%;
+        position: inherit;
+
+    }
+
+    form {
+      padding: 0;
+    }
+
+    .form form input, textarea, label {
+      width: 50%;
+      margin-left: 25%;
     }
 
     button {
-        right: 67px;
+      position: inherit;
+      width: 50%;
+      margin-left: 25%;
     }
 
     .social-media {
         flex-wrap: wrap;
-        gap: 2.5rem;
-        width: 80%;
-        margin: -4rem auto;
+        gap: 1.5rem;
+        margin: -6rem auto;
         justify-content: center;
 
     }
