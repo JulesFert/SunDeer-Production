@@ -62,6 +62,7 @@ navbar : function() {
         } else {
             // Scroll vers le bas
             document.querySelector('#navbar').classList.remove('hidden'); 
+            console.log('navbar apparait')
         }
 
         prevScrollpos = currentScrollPos;
