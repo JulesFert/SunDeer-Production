@@ -11,9 +11,10 @@ body {
 }
 
 .header {
-    background-image: url(../assets/background_intro.jpg);
+    background-image: url(../assets/new_images/VICTORIOUS\ K\ V1.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: center;
     overflow: hidden;
     height: 65rem;
     position: relative;
@@ -73,9 +74,10 @@ body {
 }
 
 .article_studio {
-    background-image: url(../assets/background_studio.jpg);
+    background-image: url(../assets/new_images/20210815_223906_redim.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: center;
     overflow: hidden;
 }
 
@@ -98,17 +100,17 @@ body {
   }
 
 .article0 {
-    background-image: url(../assets/background-crop.jpg);
+    background-image: url(../assets/new_images/01\ SWEET\ MORNING.jpg);
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-
 }
 
 .article {
-    background-image: url(../assets/image2.jpg);
+    background-image: url(../assets/new_images/16\ BIRTH\ OF\ FLOWERS.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: top;
     overflow: hidden;
 }
 
@@ -144,9 +146,10 @@ body {
 }
 
 .article2 {
-    background-image: url(../assets/image3.jpg);
+    background-image: url(../assets/new_images/20\ come\ back\ earth.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: center;
     overflow: hidden;
 }
 
@@ -156,9 +159,10 @@ body {
 }
 
 .article3 {
-    background-image: url(../assets/image4.jpg);
+    background-image: url(../assets/new_images/19\ \ 2\ sunny\ rain\ man.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: center;
     overflow: hidden;
 }
 
@@ -176,7 +180,7 @@ body {
 }
 
 .article5 {
-    background-image: url(../assets/Leonardo_Diffusion_XL_a_deer_with_headphones_in_front_of_a_mix_2\ \(1\).jpg);
+    background-image: url(../assets/new_images/confiance.jpg);
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
