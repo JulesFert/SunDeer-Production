@@ -1209,9 +1209,9 @@ z-index: -1
         height: calc(100vh + 32rem);
     }
 
-    .article4 {
-        min-height: 55rem;
-    }
+    .article4 .article__content {
+      height: 70rem;
+  }
 
     audio {
         width: 15rem;
