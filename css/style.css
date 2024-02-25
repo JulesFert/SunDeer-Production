@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    background-image: url(../assets/new_images/VICTORIOUS\ K\ V1.jpg);
+    background-image: url(../assets/new_images/01\ SWEET\ MORNING.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position-y: center;
@@ -100,14 +100,14 @@ body {
   }
 
 .article0 {
-    background-image: url(../assets/new_images/01\ SWEET\ MORNING.jpg);
+    background-image: url(../assets/new_images/16\ BIRTH\ OF\ FLOWERS.jpg);
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
 }
 
 .article {
-    background-image: url(../assets/new_images/16\ BIRTH\ OF\ FLOWERS.jpg);
+    background-image: url(../assets/new_images/VICTORIOUS\ K\ V1.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position-y: top;
