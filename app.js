@@ -6,6 +6,10 @@ let app = {
 
 init: function() {
         console.log('Initialisation');
+
+        // je vide le cache
+        app.emptyCache();
+
         // j'initialise la navbar dynamique
         app.navbar();
 
@@ -108,6 +112,22 @@ toggleMenu : function() {
 handleSubmit : function(event) {
     console.log('form bien submit !');
     alert("Votre message a été transmit avec succès !");
+},
+
+emptyCache: function() {
+
+    self.addEventListener('activate', function(event) {
+        event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+            cacheNames.map(function(cacheName) {
+                return caches.delete(cacheName);
+            })
+            )
+        })
+        )
+    })
+  
 }
 
 };
