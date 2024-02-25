@@ -1148,10 +1148,11 @@ z-index: -1
 @media screen and (max-width: 700px) {
 
     .header {
-      background: url(../assets/background_intro.jpg) fixed;
+      background: url(../assets/new_images/VICTORIOUS\ K\ V1.jpg) fixed;
       height: 100vh;
       background-size: cover;
       background-position-x: center;
+      background-position-y: center;
     }
 
     .header__title{
