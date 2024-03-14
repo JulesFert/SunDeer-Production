@@ -1190,6 +1190,14 @@ z-index: -1
 
 @media screen and (max-width: 700px) {
 
+	.video__container {
+		max-width: 75%;
+	}
+
+	.video {
+		width: 100%;
+	}
+
     .header {
       background: url(../assets/new_images/01\ SWEET\ MORNING.jpg) fixed;
       height: 100vh;
