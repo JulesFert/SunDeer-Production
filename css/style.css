@@ -125,7 +125,6 @@ body {
     width: 50%;
     height: 100%;
     background-color: #000000b8;
-
 }
 
 .article__title {
@@ -450,6 +449,35 @@ NAVBAR DYNAMIQUE  */
     top: 0;
     width: 100%;
   }
+
+  /* COMPOSITIONS */
+
+.compos {
+    background-image: url(../assets/new_images/VICTORIOUS\ K\ V1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    overflow: scroll;
+}
+
+.video__title {
+    color: white;
+}
+
+.video {
+    width: 42rem;
+    height: 20rem;
+}
+
+.article__content__compos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #000000b8;
+  overflow-x: visible;
+}
+
 
 /*  BURGER
 ========================================== */
@@ -1148,7 +1176,7 @@ z-index: -1
 @media screen and (max-width: 700px) {
 
     .header {
-      background: url(../assets/new_images/VICTORIOUS\ K\ V1.jpg) fixed;
+      background: url(../assets/new_images/01\ SWEET\ MORNING.jpg) fixed;
       height: 100vh;
       background-size: cover;
       background-position-x: center;
