@@ -462,6 +462,13 @@ NAVBAR DYNAMIQUE  */
 
 .video__title {
     color: white;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.video__container {
+	margin-bottom: 2rem;
 }
 
 .video {
@@ -476,6 +483,14 @@ NAVBAR DYNAMIQUE  */
   height: 100%;
   background-color: #000000b8;
   overflow-x: visible;
+}
+
+.article__text__compos {
+	color: antiquewhite;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    margin: 1.5rem;
 }
 
 
