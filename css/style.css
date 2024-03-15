@@ -78,7 +78,7 @@ ul {
 
 /* ----------------------------------ARTICLES---------------------------------- */
 
-.article0, .article, .article2, .article3, .article_studio, .article5 {
+.article0, .article, .article2, .article3, .article_studio, .article5, .article6 {
     height: calc(100vh + 10rem);
 	background-size: cover;
     background-attachment: fixed;
@@ -116,6 +116,11 @@ ul {
 .article5 {
     background-image: url(../assets/new_images/confiance.jpg);
     position: relative; 
+}
+
+.article6 {
+    background-image: url(../assets/new_images/confiance.jpg);
+    height: 150rem;
 }
 
 .article_studio {
