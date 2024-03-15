@@ -555,6 +555,11 @@ footer {
       right: calc(50% - 80px);
     }
 
+    /* .logo__img.certif {
+        margin-top: 22rem;
+        width: 5rem;
+    } */
+
     .navbar a {
         padding: 14px 8px;
         font-size: 0.5rem;
