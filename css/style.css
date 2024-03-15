@@ -349,6 +349,7 @@ button:hover {
 
 .wayden-li {
     display: flex;
+    flex-wrap: wrap;
     gap: 5rem;
 }
 
@@ -363,7 +364,7 @@ button:hover {
     border-radius: 12px;
 }
 
-.wayden-card, .lessources-card {
+.wayden-card {
     border: 2px solid rgba(250, 235, 215, 0.529);
     border-radius: 12px;
     padding: 15px;
