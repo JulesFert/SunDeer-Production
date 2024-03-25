@@ -561,18 +561,32 @@ button:hover {
     filter: brightness(1.8);
 }
 
-footer {
-    background-color: #000000b8;
+/* ---------------------------------- FOOTER ---------------------------------- */
+
+section, footer {
+    background: #1A1E25;
+    color: #868c96;
 }
 
-.footer__ul {
-    display: flex;
-    justify-content: space-around;
-  }
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
 
-.footer__li {
-    color: antiquewhite;
-}  
+footer img {
+    width: 44px;
+}
+
+#footer__link {
+    text-decoration: none;
+    color: #868c96;
+    transition: 0.2s ease-in-out;
+}
+
+#footer__link:hover {
+    text-decoration: underline;
+}
+
 
 
 /* ----------------------------------RESPONSIVE---------------------------------- */
