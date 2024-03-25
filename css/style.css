@@ -76,6 +76,11 @@ ul {
     right: 1rem;
 }
 
+.logo__certif {
+    max-width: 150px;
+    margin: 1rem;
+}
+
 /* ----------------------------------ARTICLES---------------------------------- */
 
 .article0, .article, .article2, .article3, .article_studio, .article5, .article6 {
@@ -83,6 +88,10 @@ ul {
 	background-size: cover;
     background-attachment: fixed;
 	overflow: hidden;
+}
+
+.article5 {
+    height: 100%;
 }
 
 .article0 {
@@ -120,7 +129,7 @@ ul {
 
 .article6 {
     background-image: url(../assets/new_images/confiance.jpg);
-    height: 150rem;
+    height: 100%;
 }
 
 .article_studio {
@@ -319,6 +328,7 @@ button:hover {
 
 .social-media {
     display: flex;
+    justify-content: center;
     margin-top: 16rem;
     gap: 3.5rem;
     position: absolute;
@@ -354,6 +364,7 @@ button:hover {
 
 .wayden-li {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 5rem;
 }
@@ -364,15 +375,19 @@ button:hover {
     margin-bottom: 0.5rem;
 }
 
-#wayden, #sources {
-    height: 12rem;
+#wayden {
+    height: 80%;
     border-radius: 12px;
+    width: 100%;
+    object-fit: contain;
 }
 
-.wayden-card {
+.card {
     border: 2px solid rgba(250, 235, 215, 0.529);
     border-radius: 12px;
     padding: 15px;
+    height: 20rem;
+    width: 20rem;
 }
 
 .link {
@@ -486,6 +501,10 @@ button:hover {
     justify-content: center;
 }
 
+.yellow {
+    color: #FFCA0A;
+}
+
 .article__text__compos {
 	color: antiquewhite;
     text-align: center;
@@ -535,7 +554,6 @@ button:hover {
 }
 
 .figure:hover .video__title {
-    color: #FFCA0A;
     font-weight: bold;
 }
 
@@ -605,10 +623,10 @@ footer {
       right: calc(50% - 80px);
     }
 
-    /* .logo__img.certif {
-        margin-top: 22rem;
-        width: 5rem;
-    } */
+    .logo__certif {
+        max-width: 80px;
+        margin: 0.5rem;
+    }
 
     .navbar a {
         padding: 14px 8px;
@@ -639,8 +657,8 @@ footer {
         height: auto;
     }
 
-    .article0, .article, .article2, .article3, .article_studio, .article5 {
-        height: calc(100vh + 32rem);
+    .article0, .article, .article2, .article3, .article_studio, .article5, .article6 {
+        height: 100%;
     }
 
     .article4 .article__content {
@@ -721,14 +739,6 @@ footer {
         margin: -6rem auto;
         justify-content: center;
 
-    }
-
-    #sources {
-        height: 7rem;
-    }
-
-    #wayden {
-        height: 10rem;
     }
 
     .wayden-li {

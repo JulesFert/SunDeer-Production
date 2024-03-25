@@ -121,30 +121,39 @@ audio: function() {
     const images = document.querySelectorAll('.img__container figure');
 
     // Récupérer l'élément audio
-    const audio = document.getElementById('audio');
+    const audio = document.getElementsByClassName('audio');
+    const audioArray = Array.from(audio);
 
     // Variable pour suivre l'état de l'audio
     let isAudioPlaying = false;
 
     // Ajouter un écouteur d'événements à chaque image
-    images.forEach(image => {
+    images.forEach((image, index) => {
         image.addEventListener('click', () => {
             // Vérifier si l'audio est en cours de lecture
             if (isAudioPlaying) {
                 // Si l'audio est en cours de lecture, mettre en pause
-                audio.pause();
+                audioArray[index].pause();
                 isAudioPlaying = false;
+                console.log('on met en pause')
+                const lastChild = image.lastElementChild
+                lastChild.classList.remove('yellow')
             } else {
                 // Définir le fichier audio à jouer en fonction de l'image cliquée
                 if (image.id === 'figure1') {
-                    audio.src = 'assets/AIversusLI extrait bounce pt_1.mp3';
+                    audioArray[index].play();
+                    isAudioPlaying = true;
                 } else if (image.id === 'figure2') {
-                    audio.src = 'assets/BREATH extrait.mp3';
+                    audioArray[index].play();
+                    isAudioPlaying = true;
                 }
                 
                 // Lancer la lecture de l'audio
-                audio.play();
+                audioArray[index].play();
                 isAudioPlaying = true;
+
+                const lastChild = image.lastElementChild
+                lastChild.classList.add('yellow')
             }
         });
     });
