@@ -193,7 +193,7 @@ compos: function() {
             // on remet tous les boutons en normal
             navButtons.forEach(btn => {
                 btn.style.fontWeight = 'normal'
-                btn.style.backgroundColor = 'transparent'
+                btn.style.color = ''
             });
            
             // si on réappuie sur le meme bouton déjà activé
@@ -222,8 +222,7 @@ compos: function() {
 
             // on met le bouton concerné en gras pour indiquer le filtre actif
             button.style.fontWeight = 'bold'
-            button.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
-            console.log('le bouton ' + button.dataset.filter + ' est actif')
+            button.style.color = '#FFCA0A'
             }
 
 
