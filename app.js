@@ -3,6 +3,7 @@ let app = {
     burger2 : null,
     nav : null,
     body : null,
+    isFiltered: null,
 
 init: function() {
         console.log('Initialisation');
@@ -48,6 +49,7 @@ init: function() {
         }
 
         app.audio();
+        app.compos();
     },
 
 navbar : function() {
@@ -157,14 +159,6 @@ audio: function() {
             }
         });
     });
-
-    // Ajouter un événement pour mettre à jour l'état de l'audio
-    audio.addEventListener('pause', () => {
-        isAudioPlaying = false;
-    });
-    audio.addEventListener('play', () => {
-        isAudioPlaying = true;
-    });
 },
 
 emptyCache: function() {
@@ -181,7 +175,62 @@ emptyCache: function() {
         )
     })
   
-}
+},
+
+compos: function() {
+
+    // je récupère tous les boutons et des figures
+    const navButtons = document.querySelectorAll('.nav-button');
+    const figures = document.querySelectorAll('.figure');
+
+    // pour tous les boutons
+    navButtons.forEach(button => {
+        // j'ajoute un listener
+        button.addEventListener('click', function () {
+            // je récupère le filtre du bouton courant
+            const filter = button.dataset.filter
+
+            // on remet tous les boutons en normal
+            navButtons.forEach(btn => {
+                btn.style.fontWeight = 'normal'
+                btn.style.backgroundColor = 'transparent'
+            });
+           
+            // si on réappuie sur le meme bouton déjà activé
+            if (app.isFiltered === filter) {
+                // tous les figure se réaffichent
+                figures.forEach(figure => {
+                    figure.style.display = 'flex'
+                });
+                // et on remet le filtre à zéro
+                app.isFiltered = null;
+            } else {
+
+            // sinon, on masque toutes les figures...
+            figures.forEach(figure => {
+                figure.style.display = 'none'
+            });
+
+            // ...et on affiche les figures correspondant au filtre
+            const filteredFigures = document.querySelectorAll('.' + filter)
+            filteredFigures.forEach(figure => {
+                figure.style.display = 'flex'
+            });
+
+            // on a filtré, on enregistre la valeur du filtre 
+            app.isFiltered = filter
+
+            // on met le bouton concerné en gras pour indiquer le filtre actif
+            button.style.fontWeight = 'bold'
+            button.style.backgroundColor = 'rgba(255, 255, 255, 0.3)'
+            console.log('le bouton ' + button.dataset.filter + ' est actif')
+            }
+
+
+        });
+    });
+
+},
 
 };
 
