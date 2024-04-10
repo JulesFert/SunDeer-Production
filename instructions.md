@@ -62,3 +62,72 @@
 
 - On modifie le ```id``` de la balise ```<audio>``` ainsi que le ```src```. On a modifié l'image qui a l'id ```"image__audio4"```, on attribue à la balise ```<audio>``` l'id "audio4" . On lui indique également l'emplacement du fichier audio, qui sera dans le dossier ```assets```.
 ![Image-screenshot-new-audio](./assets/screenshots/new__audio.png)
+
+## Cas 2 : Ajouter une nouvelle musique à la suite des autres en dessous
+
+- **Les premières étapes sont les même que pour remplacer un encadré vide par un de tes musiques**
+
+- Aller dans le fichier ``index.html``
+- Pour voir en direct les modifications, on appuie sur le petit bouton "go live" en bas à droite de l'éditeur de code.
+- Une fois dans ```index.html```, faire le raccourci clavier ```ctrl + F``` 
+- Sur la petite barre qui est apparue en haut à droite, écrire **img_container** (voir screenshot)
+- On arrive donc sur la partie du code relative aux compositions, avec toutes les musiques dans le conteneur ``img__container``
+- Fermer la barre de recherche avec la petite croix
+- On sélectionne la dernière balise ```<figure>```, pour la copier coller juste en dessous. 
+![Image-screenshot-figure-copy](./assets/screenshots/effacer__img.png)
+----> **comme ceci !**
+![Image-screenshot-figure-paste](./assets/screenshots/copy_past_figure.png)
+
+- Comme vu précédemment, il ne nous reste plus qu'à modifier l'id de l'élément ```<figure>```, (ici on mettre 13)
+![Image-screenshot-new-id](./assets/screenshots/new_figure_id.png)
+
+- Puis on change l'id de l'image
+![Image-screenshot-new-audio-id](./assets/screenshots//new_audio_id.png)
+
+- Puis on met à jour le titre 
+![Image-screenshot-new-title](./assets/screenshots/new__title.png)
+
+- Depuis ```index.html``` on effectue de nouveau le raccourci ```ctrl + F```.
+- Cette fois, on recherche ```audio__container```.
+
+![Image-screenshot-audio-container-search](./assets/screenshots/recherche__audio__container.png)
+
+- On arrive à la partie du code contenant les fichiers audio relatifs aux images plus haut. 
+![Image-screenshot-audio-container](./assets/screenshots/audio_12.png)
+
+- On copie colle le dernier fichier audio afin de le dupliquer 
+![Image-screenshot-audio-12](./assets/screenshots/audio_12_past.png)
+
+- On change son id (ici ce sera 13) puis on met le chemin vers le nouveau fichier dans le 'src' ! 
+
+- On va maintenant dans le fichier ```app.js```
+
+- On va à la ligne 178, on copie colle cette partie du code, juste en dessous
+
+![Image-screenshot-JS](./assets/screenshots/JS.png)
+
+- Une fois copié et collé, on modifie le "12" en "13"
+
+![Image-screenshot-JS-2](./assets/screenshots/JS-2.png)
+
+
+
+## Cas 3 : Effacer une des musiques de la partie "compositions"
+
+- On efface tout simplement toute la balise ```figure``` souhaitée (ici la 11, l'avant dernière)
+![Image-screenshot-audio-delete](./assets/screenshots/effacer__img.png)
+
+
+# Une fois qu'un changement est fait
+
+## Mettre à jour le site en ligne 
+
+- Une fois les changements faits en local, on envoit sur github
+- On fait, dans l'éditeur de code, ```ctrl + U```
+- Puis on tape dans le terminal les commandes suivantes : ```git add . ``` puis ```git commit -m "message de votre choix"``` puis enfin ```git push```
+- On met ensuite à jour le site en ligne
+- On ouvre la console d'urgence de gandi
+- On se connecte en SSH au serveur en ligne
+- On fait un ```git pull```
+- C'est bon ! 
+

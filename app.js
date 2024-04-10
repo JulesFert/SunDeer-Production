@@ -148,6 +148,39 @@ audio: function() {
                 } else if (image.id === 'figure2') {
                     audioArray[index].play();
                     isAudioPlaying = true;
+                } else if (image.id === 'figure3') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure4') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure5') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure6') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure7') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure8') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure9') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure10') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure11') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure12') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                } else if (image.id === 'figure13') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
                 }
                 
                 // Lancer la lecture de l'audio
