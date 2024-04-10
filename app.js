@@ -161,22 +161,6 @@ audio: function() {
     });
 },
 
-emptyCache: function() {
-
-    self.addEventListener('activate', function(event) {
-        event.waitUntil(
-        caches.keys().then(function(cacheNames) {
-            return Promise.all(
-            cacheNames.map(function(cacheName) {
-                return caches.delete(cacheName);
-            })
-            )
-        })
-        )
-    })
-  
-},
-
 compos: function() {
 
     // je récupère tous les boutons et des figures
@@ -229,6 +213,22 @@ compos: function() {
         });
     });
 
+},
+
+emptyCache: function() {
+
+    self.addEventListener('activate', function(event) {
+        event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+            cacheNames.map(function(cacheName) {
+                return caches.delete(cacheName);
+            })
+            )
+        })
+        )
+    })
+  
 },
 
 };
