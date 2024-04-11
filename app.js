@@ -182,6 +182,22 @@ audio: function() {
                     audioArray[index].play();
                     isAudioPlaying = true;
                 }
+                else if (image.id === 'figure14') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                }
+                else if (image.id === 'figure15') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                }
+                else if (image.id === 'figure16') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                }
+                else if (image.id === 'figure17') {
+                    audioArray[index].play();
+                    isAudioPlaying = true;
+                }
                 
                 // Lancer la lecture de l'audio
                 audioArray[index].play();
